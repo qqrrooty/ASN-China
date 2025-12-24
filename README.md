@@ -9,7 +9,7 @@
    
 ## 特征
 
- - 每天凌晨 5 点（北京时间 UTC+8）自动构建，根据 [missuo/ASN-China](https://github.com/missuo/ASN-China) 定制适合 Clash 和 mihomo 内核的规则集文件
+ - 每天凌晨 1 点（北京时间 UTC+8）自动构建，根据 [missuo/ASN-China](https://github.com/missuo/ASN-China) 定制适合 Clash 和 mihomo 内核的规则集文件
 
 ## 安装 / 使用
 
