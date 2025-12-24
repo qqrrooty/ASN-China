@@ -1,0 +1,30 @@
+name: Build CN ASN
+
+on:
+  schedule:
+    - cron: "0 17 * * *"   # UTC 17 = CST 01
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Build ASN
+        run: node scripts/convert.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "update CN ASN" || echo "no change"
+          git push
