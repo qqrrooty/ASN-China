@@ -33,11 +33,12 @@ jobs:
           ./mihomo rule-set compile CN_ASN.yaml CN_ASN.mrs
           ./mihomo rule-set compile CN_ASN_No_Resolve.yaml CN_ASN_No_Resolve.mrs
 
-- name: Commit changes
-  run: |
-    git config user.name "github-actions"
-    git config user.email "github-actions@github.com"
-    git add .
-    git commit -m "update CN ASN ($(date -u '+%Y-%m-%d %H:%M UTC'))" || echo "no change"
-    git push
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "update CN ASN ($(date -u '+%Y-%m-%d %H:%M UTC'))" || echo "no change"
+          git push
+
 
