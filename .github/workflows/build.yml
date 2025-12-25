@@ -15,7 +15,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
@@ -25,11 +24,12 @@ jobs:
 
       - name: Build ASN
         run: node scripts/convert.js
-      
+
       - name: Build MRS
         run: |
-          wget https://github.com/MetaCubeX/mihomo/releases/latest/download/mihomo-linux-amd64 -O mihomo
+          wget -q https://github.com/DustinWin/proxy-tools/releases/download/mihomo/mihomo -O mihomo
           chmod +x mihomo
+
           ./mihomo rule-set compile CN_ASN.yaml CN_ASN.mrs
           ./mihomo rule-set compile CN_ASN_No_Resolve.yaml CN_ASN_No_Resolve.mrs
 
