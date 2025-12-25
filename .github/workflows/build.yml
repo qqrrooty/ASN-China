@@ -33,7 +33,7 @@ jobs:
           mv CrashCore mihomo
           chmod +x mihomo
           test -s CN_ASN_No_Resolve.list
-          ./mihomo convert-ruleset ipcidr text CN_ASN_No_Resolve.list CN_ASN_No_Resolve.mrs
+          ./mihomo convert-ruleset asn text CN_ASN_No_Resolve.list CN_ASN_No_Resolve.mrs
 
       - name: Commit changes
         run: |
