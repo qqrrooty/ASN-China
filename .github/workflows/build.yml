@@ -1,4 +1,3 @@
-
 concurrency:
   group: cn-asn
   cancel-in-progress: true
