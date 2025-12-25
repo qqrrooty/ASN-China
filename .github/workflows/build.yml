@@ -23,26 +23,17 @@ jobs:
         with:
           node-version: 18
 
-      - name: Build ASN list
+      - name: Build ASN
         run: node scripts/convert.js
 
       - name: Build MRS
         run: |
           set -e
-
-          mkdir -p tools mrs
-
-          echo "Download mihomo (CrashCore)..."
-          curl -L https://github.com/DustinWin/proxy-tools/releases/download/mihomo/mihomo-meta-linux-amd64v3.tar.gz \
-            | tar -zx -C ./tools/
-
-          mv -f ./tools/CrashCore ./tools/mihomo
-          chmod +x ./tools/mihomo
-
-          echo "Convert ASN list to mrs..."
-          ./tools/mihomo convert-ruleset ipcidr text \
-            CN_ASN.list \
-            CN_ASN.mrs
+          curl -L https://github.com/DustinWin/proxy-tools/releases/download/mihomo/mihomo-meta-linux-amd64v3.tar.gz | tar -zx
+          mv CrashCore mihomo
+          chmod +x mihomo
+          test -s CN_ASN_No_Resolve.list
+          ./mihomo convert-ruleset ipcidr text CN_ASN_No_Resolve.list CN_ASN_No_Resolve.mrs
 
       - name: Commit changes
         run: |
