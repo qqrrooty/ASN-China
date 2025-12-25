@@ -1,4 +1,4 @@
-name: Build CN ASN (mrs)
+name: Build CN ASN
 
 on:
   workflow_dispatch:
@@ -25,15 +25,6 @@ jobs:
 
       - name: Build ASN
         run: node scripts/convert.js
-
-      - name: Build MRS
-        run: |
-          set -e
-          curl -L https://github.com/DustinWin/proxy-tools/releases/download/mihomo/mihomo-meta-linux-amd64v3.tar.gz | tar -zx
-          mv CrashCore mihomo
-          chmod +x mihomo
-          test -s CN_ASN_No_Resolve.list
-          ./mihomo convert-ruleset asn text CN_ASN_No_Resolve.list CN_ASN_No_Resolve.mrs
 
       - name: Commit changes
         run: |
