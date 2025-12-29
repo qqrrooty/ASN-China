@@ -1,5 +1,5 @@
 # CN 的 ASN 信息
-# 最后更新： CST 2025-12-29 01:22:26.792Z
+# 最后更新： CST 2025-12-30 01:23:26.795Z
 # ASN: 5227
 # 来源 missuo ，由 qqrrooty 制作。
 
@@ -20,10 +20,10 @@ payload:
   - IP-ASN,139799,no-resolve
   - IP-ASN,4842,no-resolve
   - IP-ASN,9808,no-resolve
+  - IP-ASN,213605,no-resolve
   - IP-ASN,56048,no-resolve
   - IP-ASN,4538,no-resolve
   - IP-ASN,24400,no-resolve
-  - IP-ASN,213605,no-resolve
   - IP-ASN,133865,no-resolve
   - IP-ASN,4812,no-resolve
   - IP-ASN,17621,no-resolve
@@ -35,8 +35,8 @@ payload:
   - IP-ASN,137753,no-resolve
   - IP-ASN,9929,no-resolve
   - IP-ASN,146834,no-resolve
-  - IP-ASN,63631,no-resolve
   - IP-ASN,140633,no-resolve
+  - IP-ASN,63631,no-resolve
   - IP-ASN,45090,no-resolve
   - IP-ASN,37963,no-resolve
   - IP-ASN,55990,no-resolve
@@ -111,7 +111,6 @@ payload:
   - IP-ASN,212237,no-resolve
   - IP-ASN,17962,no-resolve
   - IP-ASN,17622,no-resolve
-  - IP-ASN,17429,no-resolve
   - IP-ASN,151397,no-resolve
   - IP-ASN,140726,no-resolve
   - IP-ASN,139721,no-resolve
@@ -150,6 +149,7 @@ payload:
   - IP-ASN,17964,no-resolve
   - IP-ASN,17781,no-resolve
   - IP-ASN,17775,no-resolve
+  - IP-ASN,17429,no-resolve
   - IP-ASN,141425,no-resolve
   - IP-ASN,137758,no-resolve
   - IP-ASN,137702,no-resolve
