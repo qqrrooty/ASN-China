@@ -1,6 +1,6 @@
 # CN 的 ASN 信息
-# 最后更新： CST 2026-10-01 05:19:26.603Z
-# ASN: 5231
+# 最后更新： CST 2026-10-02 05:41:31.133Z
+# ASN: 5230
 # 来源 missuo ，由 qqrrooty 制作。
 
 payload:
@@ -576,7 +576,6 @@ payload:
   - IP-ASN,203236,no-resolve
   - IP-ASN,199310,no-resolve
   - IP-ASN,198588,no-resolve
-  - IP-ASN,197817,no-resolve
   - IP-ASN,18257,no-resolve
   - IP-ASN,18244,no-resolve
   - IP-ASN,18242,no-resolve
